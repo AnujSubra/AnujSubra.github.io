@@ -23,7 +23,7 @@ repository               : "AnujSubra/AnujSubra.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/usr/src/app/images/Screenshot 2026-06-17 at 2.55.38 PM.png"
+  avatar           : "images/Screenshot 2026-06-17 at 2.55.38 PM.png"
   name             : "Anuj Subramanian"
   pronouns         : "he/him"
   bio              : "I am a high schooler at Adlai E. Stevenson High School. I am interested in machine learning, physics, and computational mechanics."
