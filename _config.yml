@@ -23,10 +23,10 @@ repository               : "https://github.com/AnujSubra/anujPage"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "/usr/src/app/images/Screenshot 2026-06-17 at 2.55.38 PM.png"
   name             : "Anuj Subramanian"
   pronouns         : "he/him"
-  bio              : "I am a high schooler at Adlai E. Stevenson High School. I am interested in machine learning, physics, and computational mechanics. I am currently working on several projects related to these fields and am always looking for new opportunities to learn and grow."
+  bio              : "I am a high schooler at Adlai E. Stevenson High School. I am interested in machine learning, physics, and computational mechanics."
   location         : "Buffalo Grove, IL"
   employer         : "Adlai E. Stevenson High School"
   uri              : # URL
