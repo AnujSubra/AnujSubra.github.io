@@ -1,0 +1,78 @@
+# CV Input Data
+# Fill in your information here and it will be automatically rendered on your CV page
+# Leave sections empty if you don't have entries for them
+
+basics:
+  name: "Anuj Subramanian"
+  label: "High School Student & Machine Learning Enthusiast"
+  email: "anujsubra@gmail.com"
+  phone: "(224) 804 5416"
+  website: "https://AnujSubra.github.io"
+  summary: "High school student at Adlai E. Stevenson High School interested in machine learning, physics, and computational mechanics."
+  location:
+    city: "Buffalo Grove"
+    region: "Illinois"
+    countryCode: "USA"
+  profiles:
+    - network: "GitHub"
+      username: "AnujSubra"
+      url: "https://github.com/AnujSubra"
+    - network: "LinkedIn"
+      username: "anuj-subramanian-a7655b339"
+      url: "https://www.linkedin.com/in/anuj-subramanian-a7655b339"
+    - network: "Instagram"
+      username: "anujsubra"
+      url: "https://instagram.com/anujsubra"
+
+education:
+  - institution: "Adlai E. Stevenson High School"
+    area: "High School Education"
+    studyType: "High School"
+    startDate: "2023"
+    endDate: "2026"
+    gpa: "4.00/4.73"
+    courses: []
+
+work:
+  # - company: "Company Name"
+  #   position: "Job Title"
+  #   startDate: "2024-01-01"
+  #   endDate: "2024-12-31"
+  #   summary: "Brief description of your role and responsibilities"
+  #   highlights:
+  #     - "Achievement or responsibility 1"
+  #     - "Achievement or responsibility 2"
+
+skills:
+  - name: "Machine Learning"
+    level: "Advanced"
+    keywords:
+      - "Python"
+      - "TensorFlow"
+      - "Scikit-learn"
+  - name: "Physics"
+    level: "Intermediate"
+    keywords:
+      - "Mechanics"
+      - "Aerodynamics"
+      - "Electricity/Magnetism"
+  - name: "Programming Languages"
+    level: "Advanced"
+    keywords:
+      - "Python"
+      - "JavaScript"
+      - "MATLAB"
+      - "Java"
+
+projects:
+  - name: "Project Name"
+    description: "Brief description of what the project does"
+    highlights:
+      - "Key feature or accomplishment 1"
+      - "Key feature or accomplishment 2"
+    keywords:
+      - "Python"
+      - "Machine Learning"
+    startDate: ""
+    endDate: ""
+    url: ""

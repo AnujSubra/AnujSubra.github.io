@@ -1,23 +1,34 @@
 {% include base_path %}
 
-{% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% if site.data['portfolio-data'] and site.data['portfolio-data'].author %}
+  {% assign author = site.data['portfolio-data'].author %}
+{% elsif page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+  {% assign author = site.author %}
 {% endif %}
+
+{% assign portfolio_data = site.data['portfolio-data'] %}
+{% assign github_handle = author.github | default: portfolio_data.social.github %}
+{% assign linkedin_handle = author.linkedin | default: portfolio_data.social.linkedin %}
+{% assign instagram_handle = author.instagram | default: portfolio_data.social.instagram %}
+{% assign website_url = author.uri | default: author.website %}
+{% assign author_bio = author.bio | default: author.summary %}
 
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
+      <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
+      <img src="{{ author.avatar | prepend: "/images/" }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high" />
     {% endif %}
   </div>
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author_bio %}<p class="author__bio">{{ author_bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
@@ -30,8 +41,8 @@
       {% if author.employer %}
         <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
       {% endif %}
-      {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+      {% if website_url %}
+        <li><a href="{{ website_url }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
@@ -85,8 +96,8 @@
       {% if author.dribbble %}
         <li><a href="https://dribbble.com/{{ author.dribbble }}"><i class="fab fa-fw fa-dribbble icon-pad-right" aria-hidden="true"></i>Dribbble</a></li>
       {% endif %}      
-      {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      {% if github_handle %}
+        <li><a href="https://github.com/{{ github_handle }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
       {% endif %}
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
@@ -120,14 +131,14 @@
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key icon-pad-right" aria-hidden="true"></i>Keybase</a></li>
       {% endif %}
-      {% if author.instagram %}
-        <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-fw fa-instagram icon-pad-right" aria-hidden="true"></i>Instagram</a></li>
-      {% endif %}      
       {% if author.lastfm %}
         <li><a href="https://last.fm/user/{{ author.lastfm }}"><i class="fab fa-fw fa-lastfm icon-pad-right" aria-hidden="true"></i>Last.fm</a></li>
       {% endif %}      
-      {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+      {% if linkedin_handle %}
+        <li><a href="https://www.linkedin.com/in/{{ linkedin_handle }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+      {% endif %}      
+      {% if instagram_handle %}
+        <li><a href="https://instagram.com/{{ instagram_handle }}"><i class="fab fa-fw fa-instagram icon-pad-right" aria-hidden="true"></i>Instagram</a></li>
       {% endif %}      
       {% if author.mastodon %}
         <li><a href="{{ author.mastodon }}"><i class="fab fa-fw fa-mastodon icon-pad-right" aria-hidden="true"></i>Mastodon</a></li>

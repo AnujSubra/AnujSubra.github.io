@@ -1,0 +1,201 @@
+/* CV Layout Styles */
+
+/* Optional: Custom styling for CV-specific elements */
+.cv-container {
+  background: transparent;
+  padding: 0;
+}
+
+.cv-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cv-section:last-child {
+  border-bottom: none;
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 1rem;
+}
+
+.cv-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.cv-header h2 {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.cv-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  font-size: 0.9em;
+}
+
+.cv-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cv-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.cv-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.85em;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.cv-profile-link:hover {
+  opacity: 1;
+}
+
+.cv-section h2 {
+  font-size: 1.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid currentColor;
+  padding-left: 0.75rem;
+}
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-item {
+  margin-bottom: 1.5rem;
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.cv-item-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.cv-item-date {
+  font-size: 0.9em;
+  white-space: nowrap;
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+.cv-item-subtitle {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  opacity: 0.85;
+}
+
+.cv-item-detail {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.cv-item-detail a {
+  text-decoration: none;
+}
+
+.cv-item-detail a:hover {
+  text-decoration: underline;
+}
+
+.cv-highlights {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.cv-highlights li {
+  margin: 0.25rem 0;
+}
+
+.cv-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.cv-skill-category h3 {
+  font-size: 1em;
+  margin: 0 0 0.5rem 0;
+}
+
+.cv-skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cv-skill-list li {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cv-section {
+    border-bottom: 1px solid #444;
+  }
+  
+  .cv-skill-list li {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cv-contact {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .cv-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .cv-item-date {
+    margin-left: 0;
+    margin-top: 0.25rem;
+  }
+  
+  .cv-skills {
+    grid-template-columns: 1fr;
+  }
+}

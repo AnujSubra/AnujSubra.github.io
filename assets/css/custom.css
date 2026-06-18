@@ -1,0 +1,6 @@
+/* Global custom styles */
+
+/* Hide footer on all pages */
+.page__footer {
+  display: none;
+}

@@ -6,9 +6,20 @@ author_profile: true
 ---
 
 {% include base_path %}
+{% assign author = site.data['portfolio-data'].author %}
+{% assign portfolio_items = site.data['portfolio-data'].portfolio %}
 
+<p>{{ author.name }} builds research-driven projects in machine learning, physics, and computational mechanics. Below is a curated selection of work, from nonprofit technology initiatives to applied research.</p>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+{% if portfolio_items and portfolio_items.size > 0 %}
+  {% for item in portfolio_items %}
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      <h2 class="archive__item-title"><a href="{{ item.url }}">{{ item.name }}</a></h2>
+      <p><strong>{{ item.category }}</strong>{% if item.date %} · {{ item.date | date: "%Y" }}{% endif %}</p>
+      <p>{{ item.description }}</p>
+    </article>
+  {% endfor %}
+{% else %}
+  <p>No portfolio items have been added yet. Add them in <code>_data/portfolio-data.yml</code>.</p>
+{% endif %}
 

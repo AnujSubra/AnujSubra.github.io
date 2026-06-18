@@ -1,4 +1,4 @@
-{% assign cv = site.data.cv %}
+{% assign cv = site.data.cv_input | default: site.data.cv %}
 
 <style>
   .archive {
@@ -142,6 +142,45 @@
       </div>
       {% endfor %}
     </div>
+  </div>
+  {% endif %}
+  
+  {% if cv.projects.size > 0 %}
+  <!-- Projects -->
+  <div class="cv-section">
+    <h2>Projects</h2>
+    <ul class="cv-list">
+      {% for project in cv.projects %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{{ project.name }}</div>
+          <div class="cv-item-date">{% if project.startDate %}{{ project.startDate | slice: 0, 4 }}{% if project.endDate %} - {{ project.endDate | slice: 0, 4 }}{% endif %}{% endif %}</div>
+        </div>
+        <div class="cv-item-content">
+          {% if project.description %}
+          <div class="cv-item-detail">{{ project.description }}</div>
+          {% endif %}
+          {% if project.highlights.size > 0 %}
+          <ul class="cv-highlights">
+            {% for highlight in project.highlights %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if project.keywords.size > 0 %}
+          <div class="cv-item-detail">
+            <strong>Technologies:</strong> {{ project.keywords | join: ", " }}
+          </div>
+          {% endif %}
+          {% if project.url %}
+          <div class="cv-item-detail">
+            <a href="{{ project.url }}" target="_blank">View Project</a>
+          </div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
   {% endif %}
   

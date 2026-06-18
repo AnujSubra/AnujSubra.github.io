@@ -1,5 +1,10 @@
-{% if site.url %}
-  {% assign base_path = site.url | append: site.baseurl %}
+{% assign effective_baseurl = site.baseurl | default: '' %}
+{% if jekyll.environment == "production" %}
+  {% if site.url %}
+    {% assign base_path = site.url | append: effective_baseurl %}
+  {% else %}
+    {% assign base_path = site.github.url | append: effective_baseurl %}
+  {% endif %}
 {% else %}
-  {% assign base_path = site.github.url %}
+  {% assign base_path = effective_baseurl %}
 {% endif %}
