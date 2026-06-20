@@ -11,7 +11,19 @@ redirect_from:
 {% assign portfolio_items = site.data['portfolio-data'].portfolio %}
 {% assign publications = site.data['portfolio-data'].publications %}
 
+
+
+## About me
 <p>{{ author.summary }}</p>
+
+### My interests and focus areas
+<p>I'm drawn to problems that sit at the intersection of multiple disciplines. My current work spans:</p>
+<ul>
+  <li><strong>Machine Learning:</strong> Applying neural networks and data science to real-world challenges from music analysis to driver risk assessment and safety optimization.</li>
+  <li><strong>Physics & Engineering:</strong> Modeling complex systems like aerodynamics and vehicle dynamics, with an emphasis on computational approaches and reduced-order modeling.</li>
+  <li><strong>Civic Impact:</strong> Building technology solutions for community challenges, including the BG Safety Dashboard that maps traffic safety data to inform policy decisions.</li>
+  <li><strong>Education & Accessibility:</strong> Supporting platforms and research that make learning opportunities more discoverable and accessible to others.</li>
+</ul>
 
 {% if portfolio_items and portfolio_items.size > 0 %}
 ## Featured work
@@ -32,8 +44,9 @@ redirect_from:
 </ul>
 {% endif %}
 
-## About me
-<p>I am based in {{ author.location }} and I build research-driven projects in machine learning, physics, and computational mechanics.</p>
+
+### How I work
+<p>I'm most energized when I can dive deep into rigorous coursework and research while building tangible projects. I'm comfortable picking up new tools and frameworks quickly, from audio production software to data platforms, and I enjoy collaborating with teams to transform ideas into impact.</p>
 
 ## Connect
 <ul>
@@ -46,4 +59,4 @@ redirect_from:
   {% endif %}
 </ul>
 
-<p>My full CV is available at <a href="/cv/">/cv/</a>. To update career and experience details, edit <code>_data/cv_input.yml</code>.</p>
+

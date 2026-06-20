@@ -86,7 +86,7 @@
           {% endif %}
           {% if education.courses.size > 0 %}
           <div class="cv-item-detail">
-            <strong>Courses:</strong> {{ education.courses | join: ", " }}
+            <strong>Completed Courses:</strong> {{ education.courses | join: ", " }}
           </div>
           {% endif %}
         </div>
@@ -154,7 +154,6 @@
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ project.name }}</div>
-          <div class="cv-item-date">{% if project.startDate %}{{ project.startDate | slice: 0, 4 }}{% if project.endDate %} - {{ project.endDate | slice: 0, 4 }}{% endif %}{% endif %}</div>
         </div>
         <div class="cv-item-content">
           {% if project.description %}
@@ -169,12 +168,7 @@
           {% endif %}
           {% if project.keywords.size > 0 %}
           <div class="cv-item-detail">
-            <strong>Technologies:</strong> {{ project.keywords | join: ", " }}
-          </div>
-          {% endif %}
-          {% if project.url %}
-          <div class="cv-item-detail">
-            <a href="{{ project.url }}" target="_blank">View Project</a>
+            <strong>Keywords:</strong> {{ project.keywords | join: ", " }}
           </div>
           {% endif %}
         </div>

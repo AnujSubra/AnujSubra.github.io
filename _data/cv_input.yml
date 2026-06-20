@@ -4,11 +4,11 @@
 
 basics:
   name: "Anuj Subramanian"
-  label: "High School Student & Machine Learning Enthusiast"
+  label: "Researcher & Developer | Machine Learning • Physics • Computational Mechanics"
   email: "anujsubra@gmail.com"
   phone: "(224) 804 5416"
   website: "https://AnujSubra.github.io"
-  summary: "High school student at Adlai E. Stevenson High School interested in machine learning, physics, and computational mechanics."
+  summary: "High school researcher at Adlai E. Stevenson High School. I combine rigorous STEM coursework with hands-on research and project work in machine learning, physics, and computational mechanics. Published researcher in ML and aerodynamics; builder of data-driven solutions for civic impact and innovation."
   location:
     city: "Buffalo Grove"
     region: "Illinois"
@@ -31,18 +31,25 @@ education:
     startDate: "2023"
     endDate: "2026"
     gpa: "4.00/4.73"
-    courses: []
+    courses: ["Computer Programming with Python" , "Computer Programming with Java", "Introduction to Engineering Design-PLTW", "AP Computer Science A", "Geometry Honors", "Precalculus Honors", "AP Calculus BC", "AP Physics 1", "Chemistry accelerated", "AP Chemistry", "AP Physics C: Mechanics & Electricity/Magnetism", "AP Computer Science Principles", "Multivariable Calculus"]
 
 work:
-  # - company: "Company Name"
-  #   position: "Job Title"
-  #   startDate: "2024-01-01"
-  #   endDate: "2024-12-31"
-  #   summary: "Brief description of your role and responsibilities"
-  #   highlights:
-  #     - "Achievement or responsibility 1"
-  #     - "Achievement or responsibility 2"
-
+  - company: "Snowday"
+    position: "Data Management Intern"
+    startDate: "2025-10-01"
+    endDate: "2025-01-31"
+    summary: "Worked with founder and data team to maintain and collect new learning opportunities for the database. "
+    highlights:
+      - "Contributed upwards of 100 new learning opportunities to the database."
+      - "Extensive researched using AI and other tools to implement new learning opportunities from various sources."
+  - company: "Literably"
+    position: "Sound Design Intern"
+    startDate: "2025-02-01"
+    endDate: "2025-06-01"
+    summary: "Worked with applications like Audacity and Aquifer to create and polish video and audio files for the company"
+    highlights:
+      - "Contributed audio and video files to the company for use in their educational applications."
+      - "Directly worked with the founder to create and polish audio and video files while quickly adapting to new company platforms."
 skills:
   - name: "Machine Learning"
     level: "Advanced"
@@ -65,14 +72,25 @@ skills:
       - "Java"
 
 projects:
-  - name: "Project Name"
-    description: "Brief description of what the project does"
+  - name: "BG Safety Dashboard"
+    description: "Built an interactive Python-based data visualization dashboard that maps Buffalo Grove traffic crash patterns to identify high-risk intersections and inform data-driven federal safety solutions and policy recommendations."
     highlights:
-      - "Key feature or accomplishment 1"
-      - "Key feature or accomplishment 2"
+      - "Engineered data pipeline to process and visualize multi-year crash datasets"
+      - "Applied machine learning techniques to identify risk patterns and predict high-risk locations"
+      - "Created interactive dashboard for stakeholders and policy makers to drive civic safety initiatives"
     keywords:
       - "Python"
       - "Machine Learning"
-    startDate: ""
-    endDate: ""
-    url: ""
+      - "Data Visualization"
+      - "Public Safety"
+  - name: "A Novel Dynamic Model for Driver Risk Assessment in Response to Auditory Environments"
+    description: "Conducted summer research at UCSB through the Summer Research Advancement (SRA) Program, developing computational models to assess how auditory environments affect driver behavior and safety."
+    highlights:
+      - "Designed and implemented dynamic computational models combining physics and behavioral analysis"
+      - "Analyzed real-world driving data to validate model predictions"
+      - "Collaborative research with UCSB faculty and mentors on cutting-edge aerodynamics and safety"
+    keywords:
+      - "Physics"
+      - "Computational Modeling"
+      - "Data Analysis"
+      - "Research"
