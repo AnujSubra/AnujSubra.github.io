@@ -37,12 +37,12 @@ publications:
     publisher: "NHSJS"
     release_date: "2026-03-26"
     website: "https://nhsjs.com/2026/analyzing-patterns-within-a-songs-musical-characteristics-through-machine-learning/"
-    summary: "Short summary of the paper and its contribution."
+    summary: "Developed a pipeline to analyze whether deep learning techniques can be applied to digital representations of music for accurate evaluation."
   - title: "Reduced-Order Model for Active Aerodynamics Prediction and Wing Control"
     publisher: "engrXiv"
     release_date: "2026-05-26"
     website: "https://doi.org/10.31224/7158"
-    summary: "Short summary of the paper and its contribution."
+    summary: "Created/presented a reduced-order model for active aerodynamics with 1.4% Mean Absolute Percentage Error for lift and 8.4% for drag with 1.2s and 5.6 kJ saved compared to baseline fixed wing/XFOIL solver."
 
 
 portfolio:
@@ -50,12 +50,12 @@ portfolio:
     category: "Nonprofit"
     date: "2025-06-01"
     url: "https://compute.care"
-    description: "Short description of the project and its impact."
+    description: "Co-founded an integrated curriculum on digital literacy for schools in rural India with 120 students and partnerships to similar organizations for sustainability."
   - name: "A Novel Dynamic Model for Driver Risk Assessment in Response to Auditory Environments"
     category: "Research"
     date: "2025-07-25"
     url: "https://www.summer.ucsb.edu/sites/default/files/documents/SRA/2025%20SRA%20Program.pdf"
-    description: "Short description of the project and its impact."
+    description: "Collaborated on a driver risk predicting model. Presented findings at a seminar with over 100 audience members and attended lectures on the theory of predictive modeling, developmental workshops, research talks."
     
 notes:
   - "Keep image paths relative to the repository root, ideally under assets/images/."
