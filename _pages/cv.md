@@ -17,7 +17,7 @@ High school senior focused on AI for computational physics and engineering, with
 ## Education
 
 **Adlai E. Stevenson High School — Class of 2027**
-- GPA: 4.0/4.73
+- GPA: 4.0/4.65
 - PSAT: 1480/1520 (state Selection Index 220) — National Merit Semifinalist
 - AP Scholar with Distinction
 - Selected coursework: AP Physics C, AP Computer Science A, AP U.S. History, advanced STEM electives, Multivariable Calculus/Linear Algebra, Ordinary Differential Equations
