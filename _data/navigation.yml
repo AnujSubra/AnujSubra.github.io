@@ -4,7 +4,8 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# Resume content is maintained on the Markdown-formatted CV page.
+# NOTE that only one of the CV options should be selected, the first is for the
+#      Markdown formatted page while the second is generated using JSON.
 
 main:
   - title: "Publications"
@@ -13,6 +14,8 @@ main:
   - title: "Portfolio"
     url: /portfolio/
 
-  - title: "Resume"
+  - title: "CV"
     url: /cv/
-    persist: true
+
+  # - title: "CV"
+  #   url: /cv-json/
