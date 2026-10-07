@@ -30,7 +30,7 @@ education:
     studyType: "High School"
     startDate: "2023"
     endDate: "2026"
-    gpa: "4.00/4.73"
+    gpa: "4.00/4.65"
     courses: ["Computer Programming with Python" , "Computer Programming with Java", "Introduction to Engineering Design-PLTW", "AP Computer Science A", "Geometry Honors", "Precalculus Honors", "AP Calculus BC", "AP Physics 1", "Chemistry accelerated", "AP Chemistry", "AP Physics C: Mechanics & Electricity/Magnetism", "AP Computer Science Principles", "Multivariable Calculus"]
 
 work:
